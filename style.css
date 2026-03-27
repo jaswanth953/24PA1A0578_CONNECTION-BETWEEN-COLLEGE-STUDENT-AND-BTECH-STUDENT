@@ -1,0 +1,359 @@
+:root {
+    --primary-blue: #1E3A8A;
+    --accent-orange: #F59E0B;
+    --bg-light: #F9FAFB;
+    --text-dark: #1F2937;
+    --text-white: #FFFFFF;
+    --shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 12px;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--primary-blue);
+}
+
+.navbar {
+    background-color: var(--text-white);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.logo span {
+    color: var(--accent-orange);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-orange);
+}
+
+.hero {
+    height: 80vh;
+    background: url('images/heropage.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--text-white);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s transform ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+}
+
+.btn-secondary {
+    background-color: var(--text-white);
+    color: var(--primary-blue);
+    margin-left: 20px;
+}
+
+.btn-accent {
+    background-color: var(--accent-orange);
+    color: var(--text-white);
+    font-size: 1.2rem;
+}
+
+.btn.small {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
+
+.colleges {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+}
+
+.college-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.college-card {
+    background: var(--text-white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.4s;
+}
+
+.college-card:hover {
+    transform: translateY(-10px);
+}
+
+.college-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.college-info {
+    padding: 25px;
+}
+
+.college-info h3 {
+    margin-bottom: 10px;
+    color: var(--primary-blue);
+}
+
+.location {
+    color: #6B7280;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.btn-text {
+    color: var(--accent-orange);
+    font-weight: 700;
+}
+
+.seniors {
+    padding: 100px 0;
+    background-color: var(--text-white);
+}
+
+.senior-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.senior-card {
+    background: var(--bg-light);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.senior-initials {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-blue), #3B82F6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+    border: 4px solid var(--accent-orange);
+    box-shadow: var(--shadow);
+}
+
+.senior-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid var(--accent-orange);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.senior-col {
+    font-weight: 600;
+}
+
+.senior-branch {
+    color: #6B7280;
+    margin-bottom: 20px;
+}
+
+.faq {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+details {
+    background-color: var(--text-white);
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 10px 20px;
+}
+
+summary {
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+    outline: none;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '+ ';
+    color: var(--accent-orange);
+    font-weight: bold;
+}
+
+details[open] summary::before {
+    content: '- ';
+}
+
+.faq-content {
+    padding: 10px 20px 20px 20px;
+    border-top: 1px solid #eee;
+}
+
+.cta {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn-secondary {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
