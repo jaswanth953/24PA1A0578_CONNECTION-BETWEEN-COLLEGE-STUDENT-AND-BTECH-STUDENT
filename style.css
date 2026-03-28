@@ -93,7 +93,7 @@ img {
 
 .hero {
     height: 80vh;
-    background: url('images/heropage.jpg') no-repeat center center/cover;
+    background: url('images/handshake.png') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -325,34 +325,27 @@ details[open] summary::before {
     background-color: var(--primary-blue);
     color: var(--text-white);
 }
-
 .cta h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-
 .cta p {
     margin-bottom: 30px;
 }
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
     }
-    
     .hero h1 {
         font-size: 2.2rem;
     }
-    
     .hero p {
         font-size: 1rem;
     }
-    
     .btn-secondary {
         margin-left: 0;
         margin-top: 15px;
     }
-
     .section-title {
         font-size: 1.8rem;
     }
